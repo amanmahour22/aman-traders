@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family:  Verdana, sans-serif, Geneva, Tahoma;
+}
+
+.section1 {
+    background-image: url("images/banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-heading {
+    height: 7vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 3% 100%);
+    background-color: #2b411c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 30px 0;
+}
+
+.header {
+    font-size: 250%;
+    font-weight: bold;
+    color: #1e2b15;
+}
+
+.navbar {
+    width: 100vw;
+    height: 7vh;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #2b411c;
+    font-weight: bold;
+}
+ /* Style for the dropdown container */
+ .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the button that will be clicked to open the dropdown */
+  .dropdown-button {
+    padding: 10px;
+    background-color: #2b411c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 50vh; /* Set a maximum height for the dropdown content */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  /* Style for individual dropdown items */
+  .dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* Hover effect for dropdown items */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown content when hovering over the dropdown container */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Basic styling for the search bar container */
+.search-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Styling for the search input */
+  .search-input {
+    padding: 10px;
+    width: 30vw;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+
+  /* Styling for the search button */
+  .search-button {
+    padding: 10px;
+    background-color: #2b411c;
+    color: #fff;
+    border: 1px solid #2b411c;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+/* slider */
+    /* Style for the slider container */
+    .slider-container {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+  
+      /* Style for the slider track */
+      .slider-track {
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        transition: transform 0.5s ease-in-out;
+      }
+  
+      /* Style for the slider item (image) */
+      .slider-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slider-item, img {
+        width: auto;
+        height: 80%;
+      }
+  
+      /* Style for the arrow buttons */
+      .arrow {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        cursor: pointer;
+        background-color: #d4d4d4;
+        color: #fff;
+        border: none;
+        padding: 20px;
+        border-radius: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .arrow-left {
+        left: 0;
+      }
+  
+      .arrow-right {
+        right: 0;
+      }
+
+      .arrow:hover {
+        background-color: #1e2b15;
+      }
+
+      .image_heading {
+        font-size: 25px;
+        color: white;
+      }
+
+.section5 {
+    width: 100%;
+    text-align: center;
+}
+
+.buynowbutton #buynow {
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    background-color: #1e2b15;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    position: absolute;
+}
+
+#buynow:hover {
+    background-color: white;
+    color: #1e2b15;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+
+.section6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.section7 {
+    padding: 3% 3% 2% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.box {
+    height: 65vh;
+    width: 20vw;
+    background-color: white;
+    box-shadow: inset;
+    border-radius: 5px;
+    padding: 1.5%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.item-price {
+    color: red;
+}
+
+.after-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#buynowprice {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item-image {
+    width: 275px;
+    height: 300px;
+    margin: 30px 0 40px 0;
+    overflow: hidden;
+}
+
+.image-slider-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.slider-button {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    padding-top: 8px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    bottom: 40px;
+    right: 30px;
+    background-color: #2b411c;
+    color: white;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contactForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer_form {
+  width: 100%;
+  padding: 8px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+#submitFormbutton {
+  background-color: rgb(0, 119, 255);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 15px 60px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+#submitFormbutton:hover {
+  background-color: rgb(10, 59, 100);
+}
+
+.footer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+  color: white;
+}
+
+.section9 {
+  width: 100%;
+  height: 50vh;
+  padding: 2% 6%;
+  text-align: center;
+}
+
+.detail1 {
+  display: flex;
+  padding: 10px 0 10px 0;
+}
+
+.section10 {
+  height: 50vh;
+  background-color: #1e2b15;
+  color: white;
+  padding: 70px;
+  align-items: center;
+}
+
+.footer_details {
+  list-style-type: none;
+  font-size: large;
+  color: white;
+  display: flex;
+  gap: 10%;
+}
+
+.footer_detail li {
+  padding-bottom: 30px;
+}
+
+.label1 {
+  width: 450px;
+}
+
+.label1 a {
+  color: white;
+}
+
+.section11 {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  text-align: center;
+}
+
