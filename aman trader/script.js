@@ -1,4 +1,6 @@
- // JavaScript function to handle the search
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+// JavaScript function to handle the search
  function search() {
     // Get the search input value
     var searchTerm = document.getElementById('searchInput').value;
